@@ -4,7 +4,7 @@ let resetBtn = document.getElementById("reset-btn");
 let turnO = true;
 
 const winPatterns = [
-  [0,1,2],
+  [0,1,2], 
   [3,4,5],
   [6,7,8],
   [0,3,6],
