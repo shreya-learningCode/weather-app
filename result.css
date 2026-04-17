@@ -65,3 +65,42 @@ button{
     background:skyblue;
     cursor:pointer;
 }
+
+.container {
+  width: 90%;   /* instead of fixed px */
+  margin: auto;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .weather-card {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .weather-card {
+    width: 80%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* mobile ke liye */
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* desktop ke liye */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
