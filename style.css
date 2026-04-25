@@ -40,10 +40,57 @@ body{
 }
 
 #reset-btn{
-    margin-top:1rren;
+    margin-top:1rem;
     font-size:1.25rem;
     background-color:#191913;
     color:#fff;
     border-radius:1rem;
     border:none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+        gap: 2vmin;
+    }
+
+    .box {
+        height: 24vmin;
+        width: 24vmin;
+        font-size: 10vmin;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #reset-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .game {
+        height: 90vmin;
+        width: 90vmin;
+        gap: 2.5vmin;
+    }
+
+    .box {
+        height: 28vmin;
+        width: 28vmin;
+        font-size: 12vmin;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    #reset-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
 }
