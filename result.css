@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url(minh-bach-tr-ng-RZW1Ieq6Jm0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.result-box{
+    width:400px;
+    padding:40px;
+    background:rgba(0,0,0,0.4);
+    border-radius:20px;
+    text-align:center;
+    color:white;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+/**heading**/
+.result-box h1{
+    margin:0;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+/**city**/
+#cityName{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+/** day & date **/
+#day,#date{
+    font-size:40px;
+    margin-bottom:15px 0;
+}
+
+/**temperature**/
+#temp{
+    font-size:40px;
+    margin-bottom:15px 0;
+}
+
+/**Description**/
+#desc{
+    font-size:18px;
+}
+
+/**Aqi**/
+#aqi{
+    margin-top:20px;
+    font-size:18px;
+}
+
+/*Button*/
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 8px;
+    background:skyblue;
+    cursor:pointer;
+}
+
+.container {
+  width: 90%;   /* instead of fixed px */
+  margin: auto;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .weather-card {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .weather-card {
+    width: 80%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* mobile ke liye */
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* desktop ke liye */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
